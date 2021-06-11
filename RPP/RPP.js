@@ -534,8 +534,6 @@ var RPP = (function () {
         RPP.polyominoDrag(poly, deltaX, deltaY);
     }
 
-    //------------ Canvas Events ------------//
-
     RPP.polyominoDrag = function (polyomino, deltaX, deltaY) {
         let pointOfInterest = PolyominoPacking.minoCenterRelativeToPosition(polyomino);
 
