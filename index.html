@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reactive Polyomino Packing (RPP)</title>
+    <style>
+      canvas {
+        display: block;
+        margin: auto;
+        background: transparent;
+        position: absolute;
+        top: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .Controllers {
+        display: none;
+        width: 100%;
+      }
+
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+
+      .repositoryLink {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 1;
+        left: 0;
+        right: 0;
+        height: fit-content;
+        width: fit-content;
+      }
+
+      .repositoryLink a {
+        color: blue;
+      }
+
+      .repositoryLink a:hover {
+        color: red;
+      }
+
+      .repositoryLink:hover + .Controllers {
+        background-color: red;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <canvas id="canvas"></canvas>
+      <canvas id="canvas2"></canvas>
+      <div class="repositoryLink">
+        <a href="https://github.com/SarAhmed/RPP-test/"
+          ><b
+            >Reactive Polyomino Packing (RPP): hover to display the
+            controllers</b
+          ></a
+        >
+      </div>
+      <div class="Controllers">
+        <h3>Controllers:</h3>
+        <div style="text-align: center">
+          <div style="display: inline-block; text-align: left">
+            <ul>
+              <li>
+                <b>Drag</b> a tile ⇒ <em><b>click</b></em> and
+                <em><b>drag</b></em
+                >. <br /><br />
+              </li>
+              <li>
+                <b>Enlarge</b> a tile ⇒ <em><b>hover</b></em> on the tile using
+                the mouse then press the <em><b>up arrow</b></em> on the
+                keyboard.<br /><br />
+              </li>
+              <li>
+                <b>Shrink</b> a tile ⇒ <em><b>hover</b></em> on the tile using
+                the mouse then press the <em><b>down arrow</b></em> on the
+                keyboard.<br /><br />
+              </li>
+              <li>
+                <b>Rotate clockwise</b> a tile ⇒ <em><b>hover</b></em> on the
+                tile using the mouse then press the
+                <em><b>right arrow</b></em> on the keyboard.<br /><br />
+              </li>
+              <li>
+                <b>Rotate anticlockwise</b> a tile ⇒ <em><b>hover</b></em> on
+                the tile using the mouse then press the
+                <em><b>left arrow</b></em> on the keyboard.<br /><br />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { RPP } from "./RPP/RPP.js";
+      RPP.generateRandomObjectsAndPack(150);
+    </script>
+  </body>
+</html>
