@@ -1,6 +1,6 @@
 # Reactive Polymino Packing (RPP)
 <p align="center">
-  <img src="https://github.com/SarAhmed/RPP-test/blob/main/RPP-demo.gif" alt="Sublime's custom image"/>
+  <img src="https://github.com/SarAhmed/RPP-test/blob/main/RPP-demo.gif" alt="RPP demo image"/>
 </p>
 
 _Reactive Polymino Packing algorithm_ is developed to introduced interactivity within a packed layout of arbitrarily shaped objects, such as, dragging one of the objects from one place to another, rotating, shrinking or enlarging it.
