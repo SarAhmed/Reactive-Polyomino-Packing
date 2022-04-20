@@ -3,7 +3,7 @@
   <img src="https://github.com/SarAhmed/Reactive-Polyomino-Packing/blob/main/RPP-demo.gif" alt="RPP demo image"/>
 </p>
 
-_Reactive Polymino Packing algorithm_ is developed to introduced interactivity within a packed layout of arbitrarily shaped objects, such as, dragging one of the objects from one place to another, rotating, shrinking or enlarging it.
+_Reactive Polymino Packing algorithm_ is developed to introduce interactivity within a packed layout of arbitrarily shaped objects, such as, dragging one of the objects from one place to another, rotating, shrinking or enlarging it.
 
 - [Interactive Demo](https://sarahmed.github.io/Reactive-Polyomino-Packing/)
 
